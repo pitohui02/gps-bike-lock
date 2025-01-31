@@ -1,14 +1,21 @@
 @import url("../theme/variables.css");
 
 .container {
-    margin-top: 200px;
+    transform: translate(0, 100px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: '100vh';
+
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
 
 .text-group {
     display: flex;
