@@ -20,11 +20,13 @@ const Home: React.FC = () => {
                 <img src={logo} alt='logo'/>
                 <img src={title} alt='title'/>
               </div>
+
               <div className="text-group">
                 <IonText>
                     <h4>Stay Locked, Stay Located</h4>
                 </IonText>
               </div> 
+              
               <IonButton buttonType='button' href="/login" expand="block" className='get-started-button'>Get Started</IonButton>
           </div>
         </IonContent>

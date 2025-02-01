@@ -1,0 +1,47 @@
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: #fffff0;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+
+.login-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: #fffff0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ion-item {
+    --ion-item-background: none;
+}
+
+ion-input.lock-key-input,
+ion-input.password-input {
+    width: 300px;
+    color: #1C6B2F;
+    --background: #92E6A7;
+
+}
+
+.input-fill-outline.input-shape-round {
+    --border-radius: 40px;
+    
+  }
+
+ion-button.login-button {
+    width: 290px;
+    height: 45px;
+    --background: #25A244;
+    --border-radius: 8px;
+}
+

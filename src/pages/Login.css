@@ -1,0 +1,20 @@
+@import url("../theme/variables.css");
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.div-container {
+    display: flex;
+    flex-direction: column;
+}
+
+ion-text h2{
+    text-align: center;
+    font-weight: bolder;
+    color: #1C6B2F;
+    text-transform: uppercase;
+    
+}
