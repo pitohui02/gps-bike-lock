@@ -1,4 +1,6 @@
 @import url("../theme/variables.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 
 .content-container {
     display: flex;
@@ -7,6 +9,13 @@
 
 
 .div-container {
+    position: absolute;  
+    top: 50%;            
+    left: 50%;           
+    transform: translate(-50%, -50%); 
+    width: 90%;          
+    max-height: 100%;    
+    overflow: hidden;    
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +23,7 @@
 ion-text h2{
     text-align: center;
     font-weight: bolder;
-    color: #1C6B2F;
+    color: #25A244;
     text-transform: uppercase;
-    
+    font-family: 'Poppins', sans-serif;
 }
