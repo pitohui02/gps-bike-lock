@@ -1,11 +1,10 @@
-import { IonButton, IonContent, IonInput, IonItem, IonList, IonPage, IonText, IonIcon } from "@ionic/react"
+import { IonButton, IonContent, IonInput, IonItem, IonList, IonPage, IonText, IonIcon, IonCheckbox } from "@ionic/react"
 import top_rectangle from "../assets/top-login-rectangle.svg"
 import { z } from "zod"
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { navigate, lockClosed } from 'ionicons/icons';
-
-import Login_Form from "../components/Login_Form.module"
+import { Link } from 'react-router-dom';
 import '../components/Login_Form.css'
 
 import logo from "../assets/lockate-logo.svg"
@@ -36,6 +35,7 @@ const Login: React.FC = () => {
           
     return(
         <>
+        <div className="mainContainer">
         <IonPage>
         <img src={top_rectangle} alt="top-rectangle-login" />
             <div className="logo">
@@ -44,7 +44,7 @@ const Login: React.FC = () => {
             </div>
 
             <IonText>
-                <h2>Login</h2>
+                <h2>Welcome!</h2>
             </IonText>
             <IonContent className="content-container">
                     
@@ -56,10 +56,10 @@ const Login: React.FC = () => {
                                 <IonInput   labelPlacement="stacked" 
                                             type="text" autoCapitalize="on" 
                                             fill="outline"{...register("lock_key")} 
-                                            placeholder="Lock Key" 
+                                            placeholder="Email" 
                                             className="lock-key-input">
                                     
-                                    <IonIcon slot="start" icon={navigate} aria-hidden="true"></IonIcon>
+                                    <IonIcon slot="start" name="mail" className="icon-padding"aria-hidden="true"></IonIcon>
                                 </IonInput>
                             </IonItem>
                                 
@@ -69,17 +69,29 @@ const Login: React.FC = () => {
                                             fill="outline" {...register("password")} 
                                             placeholder="Password" className="password-input">
 
-                                    <IonIcon slot="start" icon={lockClosed} aria-hidden="true"></IonIcon>
+                                    <IonIcon slot="start" icon={lockClosed} aria-hidden="true" className="icon-padding"></IonIcon>
                                 </IonInput>
                             </IonItem> 
                         </IonList>
-
+                        <div className="login-options">
+                            <IonCheckbox 
+                                labelPlacement="end" 
+                                className="checkbox">
+                                Remember Me
+                            </IonCheckbox>
+                            <div className="forget-password-link">
+                                <Link to="/forgetpassword">
+                                Forget Password?
+                                </Link>
+                            </div>
+                        </div>
                         <IonButton type="submit" className="login-button">Login</IonButton>
+
                     </form>
                 </div>
             </IonContent>
         </IonPage>
-        
+    </div>
         </>
     )
 }
