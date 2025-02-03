@@ -20,7 +20,7 @@ const ForgetPassword: React.FC = () => {
                 <img src={logo} alt='logo'/>
                 <img src={title} alt='title'/>
               </div>
-              <IonButton buttonType='button' href="/login" expand="block" className='get-started-button'>Get Started</IonButton>
+              
           </div>
         </IonContent>
       <img src={bottom} alt='bottom'/>
