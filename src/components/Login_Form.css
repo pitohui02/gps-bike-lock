@@ -90,6 +90,29 @@ ion-text {
     font-weight: bolder;
 }
 
+.signup-options {
+    display: flex;           
+    align-items: center;     
+    justify-content: center; 
+}
+
+ion-text.dont-have-account{
+    color: #92E6A7;
+}
+
+.dont-have-account, .signup-link {
+    display: flex;           
+    align-items: center;     
+    margin: 0 3px;          
+}
+
+.signup-link {
+    margin-right: 0;        
+}
+
+
+
+
 /* Adjust margin for smaller screens */
 @media (max-width: 768px) { /* Targets tablets and smaller devices */
     .forget-password-link {

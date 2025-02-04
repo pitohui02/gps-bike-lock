@@ -85,6 +85,16 @@ const Login: React.FC = () => {
                                 </Link>
                             </div>
                         </div>
+                        <div className="signup-options">
+                            <IonText className="dont-have-account">
+                                Dont have an account?
+                            </IonText>
+                            <div className="signup-link">
+                                <Link to="/">
+                                Sign Up
+                                </Link>
+                            </div>
+                        </div>
                         <IonButton type="submit" className="login-button">Login</IonButton>
 
                     </form>
