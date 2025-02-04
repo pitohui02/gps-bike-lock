@@ -13,7 +13,7 @@ import title from "../assets/lockate-title.svg"
 import './Login.css'
 
 const loginSchema = z.object({
-    lock_key: z.string().length(6, "Lock Key must be exactly 6 uppercase letters").regex(/^[A-Z]{6}$/, "Lock Key must be uppercase"),
+    lock_key: z.string().length(6, "Username must be exactly 6 uppercase letters").regex(/^[A-Z]{6}$/, "Lock Key must be uppercase"),
     password: z.string().min(8, "Password must be at least 8 characters"),
 })
 
@@ -80,7 +80,7 @@ const Login: React.FC = () => {
                                 Remember Me
                             </IonCheckbox>
                             <div className="forget-password-link">
-                                <Link to="/forgetpassword">
+                                <Link to="/forgetpassword" className="link-forgot">
                                 Forget Password?
                                 </Link>
                             </div>
@@ -90,13 +90,12 @@ const Login: React.FC = () => {
                                 Dont have an account?
                             </IonText>
                             <div className="signup-link">
-                                <Link to="/">
+                                <Link to="/" className="link-signup">
                                 Sign Up
                                 </Link>
                             </div>
                         </div>
                         <IonButton type="submit" className="login-button">Login</IonButton>
-
                     </form>
                 </div>
             </IonContent>
