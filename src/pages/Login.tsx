@@ -52,7 +52,7 @@ const Login: React.FC = () => {
                 
                     <form onSubmit={handleSubmit(onSubmit)} className="login-form">
                         <IonList className="login-list">
-                            <IonItem lines="none">
+                            <IonItem lines="none" className="input-border-radius">
                                 <IonInput   labelPlacement="stacked" 
                                             type="text" autoCapitalize="on" 
                                             fill="outline"{...register("lock_key")} 
@@ -63,7 +63,7 @@ const Login: React.FC = () => {
                                 </IonInput>
                             </IonItem>
                                 
-                            <IonItem lines="none">
+                            <IonItem lines="none" className="input-border-radius">
                                 <IonInput   labelPlacement="stacked" 
                                             type="password" 
                                             fill="outline" {...register("password")} 
