@@ -6,30 +6,32 @@ import title from "../assets/lockate-title.svg"
 import top from "../assets/top-rectangle.svg"
 import bottom from "../assets/bottom-rectangle.svg"
 
-import Login from '../pages/Login'
+
 import './Home.css';
 
 const Home: React.FC = () => {
 
   return (
-    <IonPage>
+    <IonPage className='home-main-cont'>
       <img src={top} alt='top'/>
-        <IonContent className="home">
           <div className='container'>
               <div className='logo'>
                 <img src={logo} alt='logo'/>
                 <img src={title} alt='title'/>
               </div>
 
-              <div className="text-group">
-                <IonText>
-                    <h4>Stay Locked, Stay Located</h4>
-                </IonText>
-              </div> 
-              
-              <IonButton buttonType='button' href="/login" expand="block" className='get-started-button'>Get Started</IonButton>
+              <div className='txt-btn-grp'>
+                <div className="text-group">
+                  <IonText>
+                      <h4>"Stay Locked, Stay Located"</h4>
+                  </IonText>
+                </div> 
+                
+                <IonButton buttonType='button' href="/login" expand="block" className='login-button'>Get Started</IonButton>
+              </div>
+
+
           </div>
-        </IonContent>
       <img src={bottom} alt='bottom'/>
     </IonPage>
   );

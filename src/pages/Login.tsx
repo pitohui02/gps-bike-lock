@@ -9,7 +9,8 @@ import '../components/Login_Form.css'
 
 import logo from "../assets/lockate-logo.svg"
 import title from "../assets/lockate-title.svg"
-
+import login from "../assets/login-txt.svg"
+import welcome from "../assets/welcome-txt.svg"
 import './Login.css'
 
 const loginSchema = z.object({
@@ -35,18 +36,21 @@ const Login: React.FC = () => {
           
     return(
         <>
-        <div className="mainContainer">
-        <IonPage>
-        <img src={top_rectangle} alt="top-rectangle-login" />
-            <div className="logo">
-                <img src={logo} alt="logo" />
-                <img src={title} alt="title" />
-            </div>
 
-            <IonText>
-                <h2>Welcome!</h2>
-            </IonText>
-            <IonContent className="content-container">
+        <IonPage className="main-container">
+            <img src={top_rectangle} alt="top-rectangle-login" />
+                <div className="logo-title">
+                    <img src={logo} alt="logo" />
+                    <img src={title} alt="title" />
+                </div>
+
+                {/* <IonText>
+                    <h2>Welcome!</h2>
+                </IonText> */}
+                <div className="welcome-text">
+                    <img src={welcome} alt="welcome" />
+                </div>
+
                     
                 <div className="div-container">
                 
@@ -73,6 +77,7 @@ const Login: React.FC = () => {
                                 </IonInput>
                             </IonItem> 
                         </IonList>
+
                         <div className="login-options">
                             <IonCheckbox 
                                 labelPlacement="end" 
@@ -85,22 +90,29 @@ const Login: React.FC = () => {
                                 </Link>
                             </div>
                         </div>
+                        
+                        <div className="login-btn">
+                            <IonButton type="submit" className="login-button">
+                                <img src={login} alt="logo" />
+                                </IonButton>
+                        </div>
+                        {/* <IonButton type="submit" className="login-button">Login</IonButton>
+                         */}
                         <div className="signup-options">
                             <IonText className="dont-have-account">
                                 Dont have an account?
                             </IonText>
                             <div className="signup-link">
-                                <Link to="/" className="link-signup">
+                                <Link to="/register" className="link-signup">
                                 Sign Up
                                 </Link>
                             </div>
                         </div>
-                        <IonButton type="submit" className="login-button">Login</IonButton>
                     </form>
                 </div>
-            </IonContent>
+
         </IonPage>
-    </div>
+
         </>
     )
 }

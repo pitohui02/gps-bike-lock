@@ -1,5 +1,9 @@
 @import url("../theme/variables.css");
 
+
+.home-main-cont {
+    background-color: #FFFFFF;
+}
 .container {
     transform: translate(0, 100px);
     display: flex;
@@ -14,12 +18,13 @@
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
-    justify-content: center;
+    margin-top: 50%;
+    /* justify-content: center; */
 }
 
 .text-group {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     text-align: center;
     
 }
@@ -37,4 +42,9 @@ ion-button.get-started-button {
     height: 45px;
     --background: #25A244;
     
+}
+
+.txt-btn-grp {
+    /* border: solid, red; */
+    transform: translateY(10%);
 }
