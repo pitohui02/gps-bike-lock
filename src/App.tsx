@@ -4,7 +4,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import Login from './pages/Login'
 import ForgetPassword from './pages/Forget-Password';
-
+import MainContent from './pages/Dashboard';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -20,6 +20,7 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
+import Dashboard from './pages/Dashboard';
 
 
 
@@ -50,6 +51,11 @@ const App: React.FC = () => (
         <Route exact path="/forgetpassword">
           <ForgetPassword />
         </Route>
+
+        <Route exact path="/dashboard">
+          <Dashboard/>
+        </Route>
+
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
