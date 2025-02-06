@@ -58,6 +58,7 @@ ion-button.login-button {
     font-size: 180%;
     font-weight: bolder;
     --background-activated: #4AD66D;
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -65,6 +66,7 @@ ion-button.login-button {
     margin-top: -8%;
     padding-top: 0;
     /* border: solid, red; */
+    
 
 }
 

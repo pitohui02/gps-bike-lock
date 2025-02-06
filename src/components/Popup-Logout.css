@@ -1,4 +1,37 @@
-ion-text {
-    font-size: larger;
-    border: solid;
+ion-modal {
+  --height: 25%;
+  --width: 75%;
+  --background: white;
+  --border-radius: 10px;
+  --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.app-logo {
+  width: 30%;
+  display: flex;
+  margin: auto;
+}
+.alert-txt {
+  margin-top: -5%;
+  margin-bottom: 2%;
+  font-size: 120%;
+  font-weight: 900;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.logout-btn, .cancel-btn{
+  font-size: larger;
+  font-weight: bolder;
+  --background: #25A244;
+  width: 70%;
+}
+
+.cancel-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5% 3% 5%
 }

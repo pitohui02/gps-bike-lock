@@ -49,4 +49,18 @@ ion-list.item-list {
 .menu-icon {
     color: #25A244;
 }
+
+.legal-info {
+    /* position: absolute; */
+    font-size: 80%;
+    font-weight: lighter;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: #333; /* Text color */
+  }
+
+.legal-info .legal {
+    font-weight: bolder;
+}
   
