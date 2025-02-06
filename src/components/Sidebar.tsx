@@ -14,11 +14,11 @@ const Sidebar: React.FC = () => {
     <div className='main-container-sb'>
       <IonMenu side="end" contentId="main-content" type="overlay" className='main-sidebar-cont'>
         <div className='menu-content'>
-          <IonHeader>
+          {/* <IonHeader>
             <IonToolbar>
               <IonTitle>Menu</IonTitle>
             </IonToolbar>
-          </IonHeader>
+          </IonHeader> */}
           <IonList className='item-list'>
             <IonItem detail-icon="none" lines='none' className='my-bike' button onClick={() => { console.log('My Bike Clicked'); }}>
               <img src={mybike} alt='My Bike'/>
