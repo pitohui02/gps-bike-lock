@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Login from './pages/Login'
 import ForgetPassword from './pages/Forget-Password';
 import Dashboard from './pages/Dashboard';
+import BikeProfile from './pages/Bike-Profile-Main';
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -54,6 +56,10 @@ const App: React.FC = () => (
 
         <Route exact path="/dashboard">
           <Dashboard/>
+        </Route>
+
+        <Route exact path="/bikeprofile">
+          <BikeProfile/>
         </Route>
 
       </IonRouterOutlet>
