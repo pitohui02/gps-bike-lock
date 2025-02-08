@@ -1,4 +1,4 @@
-import { IonImg, IonIcon,IonToolbar,IonHeader,IonContent, IonButtons, IonPage, IonText, IonTitle } from '@ionic/react';
+import { IonImg, IonIcon,IonToolbar,IonHeader,IonContent, IonButtons, IonPage, IonText, IonTitle, IonFooter } from '@ionic/react';
 
 import './Bike-Profile-Main.css';
 import sample from '../assets/sample-img-cont.svg'
@@ -81,7 +81,24 @@ const BikeProfile: React.FC = () => {
           <IonText className='serial-no-input'>
             S625TYE2
           </IonText>
+
+
+          <div className='last-edited'>
+            <IonText className='edited-txt'>
+              Last Changed
+            </IonText>
+
+            <IonFooter className='date-time'>
+              <IonText className='date'>
+                01-01-2025
+              </IonText>
+              <IonText className='time'>
+                10:15:21
+              </IonText>
+            </IonFooter>
+          </div>
         </div>
+        
     </IonPage>
   );
 };

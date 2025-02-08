@@ -100,58 +100,65 @@
 .brand {
     margin: 15% 0 3% 8%;
     position: absolute;
-    font-weight: 900;
-    font-size: 80%;
 }
 
 .brand-input {
     margin: 20% 0 3% 8%;
     position: absolute;
-    font-weight: lighter;
-    font-size: 130%;
-    text-decoration: underline;
 }
 
 .model {
     margin: 32% 0 3% 8%;
     position: absolute;
-    font-weight: 900;
-    font-size: 80%;
 }
 
 .model-input {
     margin: 37% 0 3% 8%;
     position: absolute;
-    font-weight: lighter;
-    font-size: 130%;
-    text-decoration: underline;
 }
 
 .color {
     margin: 49% 0 3% 8%;
     position: absolute;
-    font-weight: 900;
-    font-size: 80%;
 }
 
 .color-input {
     margin: 54% 0 3% 8%;
     position: absolute;
-    font-weight: lighter;
-    font-size: 130%;
-    text-decoration: underline;
 }
 
 .serial-no {
     margin: 66% 0 3% 8%;
     position: absolute;
-    font-weight: 900;
-    font-size: 80%;
 }
 
 .serial-no-input {
     margin: 71% 0 3% 8%;
     position: absolute;
+}
+
+
+.last-edited {
+    margin: 85% 0 3% 8%;
+}
+
+.date-time {
+    font-weight: lighter;
+    font-size: 70%;
+    color: rgb(117, 115, 115);
+}
+
+.time {
+    margin-left: 3%;
+}
+
+.brand, .model, .color, .serial-no, .edited-txt {
+    font-weight: 900;
+    font-size: 80%;
+
+}
+
+.brand-input, .model-input, .color-input, .serial-no-input {
     font-weight: lighter;
     font-size: 130%;
     text-decoration: underline;

@@ -6,6 +6,7 @@ import Login from './pages/Login'
 import ForgetPassword from './pages/Forget-Password';
 import Dashboard from './pages/Dashboard';
 import BikeProfile from './pages/Bike-Profile-Main';
+import BikeProfileEdit from './pages/Bike-Profile-Edit';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -60,6 +61,10 @@ const App: React.FC = () => (
 
         <Route exact path="/bikeprofile">
           <BikeProfile/>
+        </Route>
+
+        <Route exact path="/bikeprofileedit">
+          <BikeProfileEdit/>
         </Route>
 
       </IonRouterOutlet>
