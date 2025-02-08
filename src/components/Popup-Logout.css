@@ -14,12 +14,11 @@ ion-modal {
 .alert-txt {
   margin-top: -5%;
   margin-bottom: 2%;
-  font-size: 120%;
+  font-size: 100%;
   font-weight: 900;
   align-items: center;
   display: flex;
   justify-content: center;
-
 }
 
 .logout-btn, .cancel-btn{

@@ -20,7 +20,7 @@ const Sidebar: React.FC = () => {
             </IonToolbar>
           </IonHeader> */}
           <IonList className='item-list'>
-            <IonItem detail-icon="none" lines='none' className='my-bike' button onClick={() => { console.log('My Bike Clicked'); }}>
+            <IonItem href='/bikeprofile' detail-icon="none" lines='none' className='my-bike' button onClick={() => { console.log('My Bike Clicked'); }}>
               <img src={mybike} alt='My Bike'/>
             </IonItem>
 

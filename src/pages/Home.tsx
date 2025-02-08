@@ -5,7 +5,7 @@ import logo from "../assets/lockate-logo.svg"
 import title from "../assets/lockate-title.svg"
 import top from "../assets/top-rectangle.svg"
 import bottom from "../assets/bottom-rectangle.svg"
-
+import getstarted from "../assets/get-started-txt.svg"
 
 import './Home.css';
 
@@ -27,7 +27,9 @@ const Home: React.FC = () => {
                   </IonText>
                 </div> 
                 
-                <IonButton buttonType='button' href="/login" expand="block" className='login-button'>Get Started</IonButton>
+                <IonButton buttonType='button' href="/login" expand="block" className='get-button'>
+                  <img src={getstarted}/>
+                </IonButton>
               </div>
 
 

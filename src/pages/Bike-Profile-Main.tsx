@@ -1,4 +1,4 @@
-import { IonImg, IonIcon,IonToolbar,IonHeader,IonContent, IonButtons, IonPage, IonText, IonTitle, IonFooter } from '@ionic/react';
+import { IonButton, IonImg, IonIcon,IonToolbar,IonHeader,IonContent, IonButtons, IonPage, IonText, IonTitle, IonFooter } from '@ionic/react';
 
 import './Bike-Profile-Main.css';
 import sample from '../assets/sample-img-cont.svg'
@@ -12,18 +12,19 @@ const BikeProfile: React.FC = () => {
         <IonHeader>
           <IonToolbar className='bike-profile'>
               <IonButtons slot="start" className='back-btn'>
-              <IonButtons>
-                  <IonIcon slot="icon-only" name="arrow-back"></IonIcon>
-              </IonButtons>
+                <IonButton href='/dashboard' className='back-btn'>
+                    <IonIcon slot="icon-only" name="arrow-back"></IonIcon>
+                </IonButton>
               </IonButtons>
               <IonTitle className='bikeprofile-title'>
                 My Bike
               </IonTitle>
+
               <IonButtons slot="end" className='create-btn'>
-              <IonButtons>
-                  {/* <IonIcon slot="icon-only" name="create" ></IonIcon> */}
-                  Edit
-              </IonButtons>
+                <IonButton className='create-btn' href='/bikeprofileedit'>
+                    {/* <IonIcon slot="icon-only" name="create" ></IonIcon> */}
+                    Edit
+                </IonButton>
               </IonButtons>
           </IonToolbar>
         </IonHeader>

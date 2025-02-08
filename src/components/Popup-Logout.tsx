@@ -10,15 +10,16 @@ const PopupLogout: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpe
             <div className='app-logo'>
               <img src={logo} alt='app-logo'/>
             </div>
-
-            <IonText className='alert-txt'>
-            Are you sure?
-            </IonText>
+            <div className='alert-txt'>
+              <IonText>
+              Are you sure?
+              </IonText>
+            </div>
 
             <div className='cancel-logout'>
               <IonButton className='cancel-btn' expand="block" onClick={onClose}>Cancel</IonButton>
 
-              <IonButton className='logout-btn' expand="block" onClick={() => { console.log('Logout confirmed'); onClose(); }}>Logout</IonButton>
+              <IonButton href='/login' className='logout-btn' expand="block" onClick={() => { console.log('Logout confirmed'); onClose(); }}>Logout</IonButton>
 
             </div>
         </IonModal>

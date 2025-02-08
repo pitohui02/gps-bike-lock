@@ -41,10 +41,24 @@ ion-button.get-started-button {
     width: 290px;
     height: 45px;
     --background: #25A244;
-    
 }
 
 .txt-btn-grp {
     /* border: solid, red; */
     transform: translateY(10%);
+}
+
+ion-button.get-button {
+    margin-top: 10%;
+    width: 300px;
+    height: 90px;
+    /* border: solid; */
+    --background: #92E6A7;
+    --border-radius: 10px;
+    color: #1C6B2F;
+    --background-activated: #4AD66D;
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.get-button img {
+    width: 150px;
 }

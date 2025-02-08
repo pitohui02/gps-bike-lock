@@ -14,7 +14,7 @@
 }
 
 .back-btn {
-    color: white;
+    --color: white;
     margin-top: 5%;
 }
 
@@ -24,4 +24,72 @@
 
 .back-btn:active {
     transform: scale(0.9); 
+}
+
+.setup-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    position: sticky; 
+    transform: translateY(0%);
+    flex-direction: column;
+    /* border: solid; */
+}
+
+.details-bike-txt {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 120%;
+    /* border: solid; */
+}
+
+.edit-profile {
+    margin-top:-10%;
+    /* border: solid; */
+
+}
+.brand-edit, .model-edit, .color-edit, .serial-edit {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0 7% 5%;
+
+}
+
+ion-text {
+    align-self: flex-start;
+    font-size: 120%;
+    margin-bottom: 2%;
+}
+
+.save-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid; */
+    height: 15%;
+    margin-bottom: 10%;
+}
+
+ion-button.save-button {
+    width: 200px;
+    height: 0px;
+    /* border: solid; */
+    --background: #92E6A7;
+    --border-radius: 10px;
+    color: #1C6B2F;
+    --background-activated: #4AD66D;
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+ion-input.edit-key-input {
+    width: 300px;
+    color: #126B2F;
+    --background: #92E6A7;
+    --border-radius: 10px;
+    text-align: center;
+    font-style: italic;
 }

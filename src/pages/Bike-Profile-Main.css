@@ -21,11 +21,13 @@
 .back-btn {
     /* border: solid; */
     margin-left: 2%;
+    --color:white;
 }
 
 .create-btn {
     margin-right: 2%;
     text-decoration: underline;
+    --color: white;
 }
 
 .back-btn:active, .create-btn:active {

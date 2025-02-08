@@ -92,7 +92,7 @@ const Login: React.FC = () => {
                         </div>
                         
                         <div className="login-btn">
-                            <IonButton type="submit" className="login-button">
+                            <IonButton type="button" className="login-button" href="/dashboard">
                                 <img src={login} alt="logo" />
                                 </IonButton>
                         </div>
