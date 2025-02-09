@@ -2,20 +2,34 @@ ion-menu.main-sidebar-cont {
     background: transparent
 }
 
-.menu-content {
+.menu-content-sidebar {
+    margin-top: 70%;
     background-color: white;
     height: 100%;
+    border: solid;
+    display: flex;
 }
-ion-item.my-bike , ion-item.ride-history, ion-item.about {
+ion-item.my-bike , ion-item.ride-history, ion-item.about, ion-item.log-out-btn {
     background-color: #ffffff;
-    font-size: 200%;
-    transform: tranform;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 100%;
     /* border: solid, greenyellow; */
+}
+
+ion-item.log-out-btn {
+    color: #25A244;
 }
 ion-list.item-list {
     /* border: solid, black; */
-    transform: translateY(80%);
+    /* transform: translateY(80%); */
     background: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    row-gap: 5vh;
+    align-items: start;
+    flex-direction: column;
 
 }
 

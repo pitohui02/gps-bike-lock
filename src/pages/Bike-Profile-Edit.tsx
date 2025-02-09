@@ -10,7 +10,7 @@ const BikeProfileEdit: React.FC = () => {
         <IonHeader>
           <IonToolbar className='bike-profile'>
               <IonButtons slot="start" className='back-btn'>
-              <IonButton href="/bikeprofile" className='back-btn'>
+              <IonButton routerLink="/bikeprofile" className='back-btn'>
                   <IonIcon slot="icon-only" name="arrow-back"></IonIcon>
               </IonButton>
               </IonButtons>
@@ -74,11 +74,9 @@ const BikeProfileEdit: React.FC = () => {
             </IonInput>
           </div>
 
-          <div className='save-btn'>
-            <IonButton type='button' className="save-button" href='/bikeprofile'>
-              <img src={save} alt='top'/>
-              </IonButton>
-          </div>
+            <IonButton type='button' className="save-button" routerLink='/bikeprofile'>
+              Save
+            </IonButton>
 
         </div>
 

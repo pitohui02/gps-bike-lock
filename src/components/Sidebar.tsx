@@ -13,27 +13,27 @@ const Sidebar: React.FC = () => {
   return (
     <div className='main-container-sb'>
       <IonMenu side="end" contentId="main-content" type="overlay" className='main-sidebar-cont'>
-        <div className='menu-content'>
+        <div className='menu-content-sidebar'>
           {/* <IonHeader>
             <IonToolbar>
               <IonTitle>Menu</IonTitle>
             </IonToolbar>
           </IonHeader> */}
           <IonList className='item-list'>
-            <IonItem href='/bikeprofile' detail-icon="none" lines='none' className='my-bike' button onClick={() => { console.log('My Bike Clicked'); }}>
-              <img src={mybike} alt='My Bike'/>
+            <IonItem routerLink='/bikeprofile' detail-icon="none" lines='none' className='my-bike' button onClick={() => { console.log('My Bike Clicked'); }}>
+              My Bike
             </IonItem>
 
             <IonItem detail-icon="none" lines='none' className='ride-history' button onClick={() => { console.log('Ride History Clicked'); }}>
-              <img src={ridehistory} alt='Ride History'/>
+              Ride History
             </IonItem>
 
             <IonItem detail-icon="none" lines='none' className='about' button onClick={() => { console.log('About Clicked'); }}>
-              <img src={about} alt='About'/>
+              About
             </IonItem>
 
             <IonItem detail-icon="none" lines='none' className='log-out-btn' button onClick={() => setShowLogoutModal(true)}>
-              <img src={logout} alt='Logout button'/>
+              Logout
             </IonItem>
           </IonList>
         </div>

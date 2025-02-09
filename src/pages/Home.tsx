@@ -27,7 +27,7 @@ const Home: React.FC = () => {
                   </IonText>
                 </div> 
                 
-                <IonButton buttonType='button' href="/login" expand="block" className='get-button'>
+                <IonButton buttonType='button' routerLink="/login" expand="block" className='get-button'>
                   <img src={getstarted}/>
                 </IonButton>
               </div>

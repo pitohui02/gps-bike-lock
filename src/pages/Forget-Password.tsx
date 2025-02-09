@@ -1,5 +1,6 @@
-import { IonContent, IonButton, IonPage, IonText, IonInput, IonIcon, IonItem } from '@ionic/react';
-
+import {IonRoute, IonContent, IonButton, IonPage, IonText, IonInput, IonIcon, IonItem } from '@ionic/react';
+import { IonReactRouter } from '@ionic/react-router';
+import {Route} from 'react-router-dom'
 import top from "../assets/top-rectangle-reversed.svg"
 import forgotpw from "../assets/forgot-password-txt.svg"
 import reset from "../assets/reset-txt.svg"
@@ -47,8 +48,8 @@ const ForgetPassword: React.FC = () => {
               </div>
             </IonItem>
 
-            <IonButton type='button' className="login-button">
-            <img src={reset} alt='top'/>
+            <IonButton type='button' className="login-button" routerLink='/login'>
+            Reset
             </IonButton>
               
           </div>
