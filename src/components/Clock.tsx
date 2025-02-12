@@ -16,7 +16,7 @@ const Clock: React.FC = () => {
   const formatDate = (date: Date) => {
     return date.toLocaleDateString('en-US', {
       month: 'long',
-      // day: 'numeric',
+      day: 'numeric',
       year: 'numeric',
 
     });
