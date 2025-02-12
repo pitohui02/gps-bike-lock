@@ -1,24 +1,30 @@
 import React from 'react';
-import { IonIcon,IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import Sidebar from '../components/Sidebar'
+import { IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonButtons, IonIcon } from '@ionic/react';
+import MyMap from '../api/api';
+import Sidebar from '../components/Sidebar';
+import '../components/Sidebar.css'
+import Clock from '../components/Clock'
 
 const Dashboard: React.FC = () => {
   return (
     <>
-      <Sidebar /> {/* Include the sidebar */}
+      <Sidebar />
       <IonPage id="main-content">
         <IonHeader>
-          <IonToolbar>
-            <IonTitle>Main Content</IonTitle>
+          <IonToolbar className='dashboard-header'>
+            <IonTitle>
+                <Clock />
+
+            </IonTitle>
             <IonButtons slot="end">
               <IonMenuButton autoHide={false}>
-                <IonIcon icon="menu" className='menu-icon'></IonIcon>  
-              </IonMenuButton> 
+                <IonIcon name="menu" className='menu-icon'></IonIcon>
+              </IonMenuButton>
             </IonButtons>
           </IonToolbar>
         </IonHeader>
-        <IonContent className="ion-padding">
-          <h2>Welcome to the main content area</h2>
+        <IonContent>
+          <MyMap />
         </IonContent>
       </IonPage>
     </>

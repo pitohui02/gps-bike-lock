@@ -70,7 +70,7 @@ const Login: React.FC = () => {
                         </div>
 
                         <IonButton type="button" className="login-button" routerLink="/dashboard">
-                            Login
+                            LOGIN
                         </IonButton>
                         <div className="login-options">
                             <IonCheckbox 

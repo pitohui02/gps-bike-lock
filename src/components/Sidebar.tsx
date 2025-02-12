@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import { IonText, IonContent, IonHeader, IonMenu, IonTitle, IonToolbar, IonList, IonItem, IonIcon, IonLabel } from '@ionic/react';
 import PopupLogout from '../components/Popup-Logout'; 
 import './Sidebar.css';
-import logout from "../assets/logout-txt-sb.svg";
-import about from "../assets/about-txt-sb.svg";
-import ridehistory from "../assets/ridehistory-txt-sb.svg";
-import mybike from "../assets/mybike-txt-sb.svg";
 
 const Sidebar: React.FC = () => {
   const [showLogoutModal, setShowLogoutModal] = useState(false); // State to control modal visibility
@@ -28,10 +24,6 @@ const Sidebar: React.FC = () => {
               Ride History
             </IonItem>
 
-            <IonItem detail-icon="none" lines='none' className='about' button onClick={() => { console.log('About Clicked'); }}>
-              About
-            </IonItem>
-
             <IonItem detail-icon="none" lines='none' className='log-out-btn' button onClick={() => setShowLogoutModal(true)}>
               Logout
             </IonItem>
@@ -40,7 +32,8 @@ const Sidebar: React.FC = () => {
         <div className='legal-info'> 
           <IonText>
             <span className='legal'>Legal Information</span> 
-            <br/> V 1.0
+            <br/> 
+            <span className='version'>V 1.0</span>
           </IonText>
         </div> 
       </IonMenu>

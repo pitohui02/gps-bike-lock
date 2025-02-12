@@ -3,10 +3,8 @@ ion-menu.main-sidebar-cont {
 }
 
 .menu-content-sidebar {
-    margin-top: 70%;
     background-color: white;
     height: 100%;
-    border: solid;
     display: flex;
 }
 ion-item.my-bike , ion-item.ride-history, ion-item.about, ion-item.log-out-btn {
@@ -21,13 +19,11 @@ ion-item.log-out-btn {
     color: #25A244;
 }
 ion-list.item-list {
-    /* border: solid, black; */
-    /* transform: translateY(80%); */
     background: white;
     width: 100%;
     display: flex;
     justify-content: center;
-    row-gap: 5vh;
+    row-gap: 9vh;
     align-items: start;
     flex-direction: column;
 
@@ -66,7 +62,7 @@ ion-list.item-list {
 
 .legal-info {
     /* position: absolute; */
-    font-size: 80%;
+    font-size: 1rem;
     font-weight: lighter;
     width: 100%;
     padding: 10px;
@@ -76,5 +72,27 @@ ion-list.item-list {
 
 .legal-info .legal {
     font-weight: bolder;
+    font-size: 1rem;
 }
-  
+
+.version {
+    font-size: 0.9rem;
+}
+
+.dashboard-header {
+    --background: #ffffff ;
+    height: 120%;
+}
+
+.date-time {
+    margin-top: 5%;
+    font-weight: bold;
+    position: sticky;
+    margin-bottom: 2%;
+}
+
+.date-time-txt {
+    font-weight: bolder;
+    color: black;
+    font-size: 0.9rem;
+}
