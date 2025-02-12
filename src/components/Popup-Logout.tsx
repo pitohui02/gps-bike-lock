@@ -19,7 +19,7 @@ const PopupLogout: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpe
             <div className='cancel-logout'>
               <IonButton className='cancel-btn' expand="block" onClick={onClose}>Cancel</IonButton>
 
-              <IonButton href='/login' className='logout-btn' expand="block" onClick={() => { console.log('Logout confirmed'); onClose(); }}>Logout</IonButton>
+              <IonButton routerLink='/login' className='logout-btn' expand="block" onClick={() => { console.log('Logout confirmed'); onClose(); }}>Logout</IonButton>
 
             </div>
         </IonModal>

@@ -19,7 +19,7 @@
     background-image: url('../assets/bg-login.svg');
     background-size:cover;
     background-position: center;
-    border: solid;
+    /* border: solid; */
 }
 .register-text {
     display: flex;
