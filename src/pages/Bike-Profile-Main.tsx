@@ -1,11 +1,34 @@
-import { IonButton, IonImg, IonIcon,IonToolbar,IonHeader,IonContent, IonButtons, IonPage, IonText, IonTitle, IonFooter } from '@ionic/react';
+import { IonButton, IonImg, IonIcon, IonToolbar, IonHeader, IonContent, IonButtons, IonPage, IonText, IonTitle, IonFooter } from '@ionic/react';
+import React, { useState, useRef } from 'react'; // Import useRef here
 
 import './Bike-Profile-Main.css';
 import sample from '../assets/sample-img-cont.svg'
 import edit from '../assets/edit-icon.svg'
 import details from '../assets/bike-details-txt.svg'
 import line from '../assets/bike-details-line.svg'
+
 const BikeProfile: React.FC = () => {
+  const [imageSrc, setImageSrc] = useState(sample); // Default image set to 'sample'
+  const fileInputRef = useRef<HTMLInputElement>(null); // Create a ref using useRef
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files ? event.target.files[0] : null;
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e: ProgressEvent<FileReader>) => {
+        if (e.target?.result) {
+          setImageSrc(e.target.result.toString()); // Update the image source
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const triggerFileInput = () => {
+    if (fileInputRef.current) { // Ensure the ref is not null
+      fileInputRef.current.click();
+    }
+  };
 
   return (
     <IonPage className='bikeprofile-main-cont'>
@@ -22,20 +45,29 @@ const BikeProfile: React.FC = () => {
 
               <IonButtons slot="end" className='create-btn'>
                 <IonButton className='create-btn' routerLink='/bikeprofileedit'>
-                    {/* <IonIcon slot="icon-only" name="create" ></IonIcon> */}
                     Edit
                 </IonButton>
               </IonButtons>
           </IonToolbar>
         </IonHeader>
 
-        <div className='img-edit-cont'>
-            <IonImg className='img-container' src={sample}> </IonImg>
-            <IonButtons className='edit-btn'>
-                  {/* <IonIcon slot="icon-only" name="create"></IonIcon> */}
-                  <img src={edit}></img>
-              </IonButtons>
+        <div className='profile-container'>
+            <div className='img-edit-cont'>
+              <IonImg src={imageSrc} className='img-container'>
+              <input
+                    type="file" 
+                    accept="image/*" 
+                    style={{ display: 'none' }} 
+                    onChange={handleFileChange}
+                    ref={fileInputRef}
+                />
+              </IonImg>
+                <IonButtons className='edit-btn' onClick={triggerFileInput}>
+                                <img src={edit} alt="Edit Icon"/>
+                </IonButtons>
+            </div>
         </div>
+
 
         <div className='bike-name-lock-status-cont'>
             <IonText>
@@ -99,6 +131,7 @@ const BikeProfile: React.FC = () => {
             </IonFooter>
           </div>
         </div>
+
         
     </IonPage>
   );

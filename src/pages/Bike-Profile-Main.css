@@ -1,6 +1,64 @@
 .bikeprofile-main-cont {
     background-color: #eeeeee;
 }
+.profile-container {
+    width: 100%;
+    margin-bottom: 15%;
+    /* border: solid; */
+    height: 200px;
+}
+
+.img-edit-cont {
+    width: 55%;    
+    height: 100%;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+.img-container {
+    height: 80%;
+    border-radius: 50%; 
+    object-fit:cover; 
+
+}
+
+.edit-btn {
+    top: 140px;
+    right: 20px;
+    height: 100px;   /* Specify the size of the button */
+    width: 75px;
+    display: flex;  /* Ensures content is centered */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white; /* Background color for visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.edit-btn {
+    position: absolute;
+    /* top: 350px; 
+    right: 120px;  */
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); 
+
+}
+
+
+.edit-btn:active {
+    transform: scale(0.9); 
+}
+
+
 
 .bike-profile {
     --background: #25A244 ;
@@ -51,24 +109,8 @@
     border-radius: 50%; 
 }
 
-.edit-btn {
-    position: absolute;
-    top: 150px; 
-    right: 5px; 
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
 
 
-.edit-btn:active {
-    transform: scale(0.9); 
-}
 .bike-name-lock-status-cont {
     display: flex;
     justify-content: center;
